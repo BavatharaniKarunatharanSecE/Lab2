@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .main-content h2 {
+            margin-top: 0;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #ecf0f1;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .main-content {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Simple Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Blog's title</a></li>
+                <li><a href="#">Navigation menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">  
+        
+        <div class="main-content">
+            <h2>Blog posts</h2>
+            <p>HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes. </p>
+        </div>
+         
+        <div class="sidebar">
+            <h3>Content</h3>
+            <ul>
+              <li>Basics of HTML</li>
+              <li>HTML structures</li>
+              <li>Tutorials</li>
+            </ul>
+            <h3>Additional Links</h3>
+            <ul>
+                <li><a href="#">https://www.javatpoint.com/what-is-html</a></li>
+                <li><a href="#">https://www.theserverside.com/definition/HTML-Hypertext-Markup-Language</a></li>
+                <li><a href="#">https://developer.mozilla.org/en-US/docs/Web/HTML</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact: niro@gmail.com | 2024 Simple Blog</p>
+    </footer>
+
+</body>
+</html>
