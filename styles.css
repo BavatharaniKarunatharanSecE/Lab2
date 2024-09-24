@@ -1,0 +1,70 @@
+header {
+    background-color: grey;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: white;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  body {
+    background: url(download.jpg);
+  }
+  
+  a:hover {
+    background-color: green
+ }
+ a:active {
+    color: red;
+ }
+ a:focus{
+    color: darkred;
+    text-decoration: underline;
+ }
+ 
+ .box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+ }
+
+ @keyframes colorChange {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+ }
+
+  
+footer {
+
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
